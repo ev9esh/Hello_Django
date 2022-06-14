@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+#from django.http import HttpResponse
 from django.shortcuts import render
 
 
@@ -7,4 +7,4 @@ def about(request):
 
 
 def home(request):
-    return HttpResponse('This is my home')
+    return render(request, 'home.html', )
